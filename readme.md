@@ -63,8 +63,6 @@ Keep the default if you don't know what are the best to use.
     By default, it's the group ID of the current user on the host.
 - `DOCKER_ADMIN_USER`: The admin of the JupyterLab server.
     By default, it's the user to be created in the container.
-- `USER_MEM_LIMIT`: The memory limit that each user can use.
-    Note that this optional is not in effect now.
 
 The root directory of JupyterLab/Jupyter notebooks is `/workdir` in the container.
 You can mount directory on the host to it as you wish.
