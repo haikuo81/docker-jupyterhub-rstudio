@@ -95,6 +95,7 @@ docker run -d \
     --memory=$(($(head -n 1 /proc/meminfo | awk '{print $2}') * 4 / 5))k \
     --cpus=$((`nproc` - 1)) \
     -p 8000:8000 \
+    -p 8787:8787 \
     -e DOCKER_USER=`id -un` \
     -e DOCKER_USER_ID=`id -u` \
     -e DOCKER_PASSWORD=`id -un` \
